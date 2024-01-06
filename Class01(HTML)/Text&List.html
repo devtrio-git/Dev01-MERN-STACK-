@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- h1 --- h6 -->
+    <h1>This is Main Headings...</h1>
+    <!-- Alt + z (word wrap shortcut)-->
+    <!-- b (bold) and i (italic) -->
+    <p>Lorem <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cumque maiores dolor odit voluptates
+            deleniti tenetur cupiditate? Doloribus, possimus dignissimos!</b> ipsum dolor sit amet consectetur
+        adipisicing elit.<i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi asperiores molestias
+            perferendis tempora beatae iste nam atque. Numquam, accusamus.</i> Quibusdam sit enim quidem nam delectus.
+        Dolorem doloremque sequi asperiores qui modi.</p>
+
+    <p>I am <b>Ashar Ahmed</b></p>
+    <p>I am <i>Ashar Ahmed</i></p>
+
+    <!-- subscript and superscript -->
+
+    <!-- this is comment ( Ctrl + / ) -->
+
+    <p>Formula of Water is H<sub>2</sub>0</p>
+
+    <p>a<sup>2</sup> + b<sup>2</sup></p>
+
+    <!-- extra space or blank space (html entites)-->
+    <!-- for emojis (window + .) -->
+    <p>I am <b>Ashar &nbsp; &nbsp; &copy; Ahmed 😂</b></p>
+
+    <!-- br (break line) and hr (horizontal rule) -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut eos delectus, voluptates esse maxime aliquam ut
+        fuga iure nobis
+        <br />
+        <br />
+        dolorum alias a libero incidunt ipsa numquam officiis non quis, cum praesentium culpa sapiente modi?
+        <hr />
+        Iste iusto, saepe reiciendis accusamus dolores animi quasi nostrum, culpa dignissimos cum neque, eveniet optio.
+    </p>
+
+    <!-- detail and summary  -->
+    <details>
+        <summary>HTML Detail:</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate similique, eius architecto minus
+            consequatur laborum molestias delectus totam dignissimos!</p>
+    </details>
+
+    <details>
+        <summary>CSS Detail:</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate similique, eius architecto minus
+            consequatur laborum molestias delectus totam dignissimos!</p>
+    </details>
+
+    <!-- ------------------------- -->
+    <!--  3 types of list -->
+    <!-- unordered list -->
+    <h3>Unordered List</h3>
+    <!-- circle -->
+    <!-- square, circle, disc -->
+    <ul type="square">
+        <li>Ebaad</li>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+        <li>Jaweria</li>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+        <li>Ashar</li>
+        <ol>
+            <li>Null</li>
+        </ol>
+    </ul>
+
+    <!-- ordered List -->
+    <h3>Ordered List</h3>
+
+    <!-- a , A, i, I -->
+    <ol type="i">
+        <li value="1">HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JavaScript</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <!-- definition list -->
+    <h3>Definition List</h3>
+    <dl>
+        <dt> <b> HTML </b> </dt>
+        <dd>Hypertext Markup Language</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheet</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Programming Language</dd>
+    </dl>
+
+    <!-- images in HTML -->
+    <!-- relative path -->
+    <img src="./dev.jpg" alt="Devtrio image" width="200" height="200" />
+
+    <!-- absolute path -->
+    <img
+        src="data:image/png;base64,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" />
+
+
+    <!-- attributes in HTML (just for understanding)-->
+    <!-- <human height="5.7" hairColor="black"  ></human>
+    <human height="3.4"  ></human> -->
+</body>
+
+</html>
