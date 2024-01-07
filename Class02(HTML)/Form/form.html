@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- * Why Forms -->
+    <!-- Forms are the first real way for you to finally interact with your users.
+    you can ask them to provide informations. Informations are the key for any
+    website, indeed if you want your user to create an account, login, add
+    elements in the page, provide feedback, email your support team forms are
+    everything! -->
+
+    <!--type -- text,email, password , number, button, submit -->
+    <!-- textarea -->
+
+      <!-- We have 3 attributes --  method, action and submit -->
+    <!-- Method  
+         method: This attribute indicates how the data will be sent.
+         
+         GET -> get information to the server
+         method = “get”: this is generally a less used method because it is limited to 255 characters.
+         
+         POST -> send information to the server
+         method: “post” (recommended) this is the most used method for forms because it allows to send a lot of information
+    -->
+    <!-- Action
+         it’s the address of the page or the program that will process the information.
+    -->
+    <h1>Form</h1>
+
+    <form>
+        <h2>This is form</h2>
+        <label for="name">Enter Your Name: </label>
+        <input type="text" id="name"  />
+    </form>
+    <hr>
+
+    <form method="get" action="./home.html">
+        <h2>Login Form</h2>
+        <!-- email -->
+        <label for="email">Enter your Email</label>
+
+        <input name="userEmail"  type="email" id="email" required>
+        <br>
+        <br>
+        <!-- password -->
+        <label for="password">Enter your Password</label>
+
+        <input name="userPassword" type="password" id="password" required>
+        <br>
+        <!-- button -->
+        <input type="submit" value="Login">
+    </form>
+
+    <hr>
+    <form action="./home.html">
+        <label for="phone">Enter Your Number</label>
+        <input name="userNumber" type="number" placeholder="0313-123123" required>
+        <!-- Gender -->
+
+        <p>Select Your Gender</p>
+        <input name="gender" value="male" type="radio" id="male">
+        <label for="male">Male</label>
+
+        <input name="gender" value="female" type="radio" id="female">
+        <label for="female">Female</label>
+
+        <input name="gender" value="others" type="radio" id="other">
+        <label for="other">Others</label>
+
+        <br>
+        <br>
+    
+        <label for="review">Enter your Reviews</label> <br>
+        <textarea name="userReview" id="review" cols="40" rows="2"></textarea>
+
+        <br>
+        <br>
+        <label for="">Enter Date</label>
+        <input type="date" name="" id="">
+
+<br>
+<br>
+        <input type="color" name="" id="">
+<br>
+<br>
+        <input type="time">
+<br>
+<br>
+        <p>Select your Course</p>
+        <select name="course" id="">
+            <option value="HTML">HTML</option>
+            <option value="CSSS">CSS</option>
+            <option value="JS">JS</option>
+            <option value="Bootstrap">Bootstrap</option>
+        </select>
+<br>
+<br>
+        <!-- button -->
+        <input type="submit" value="Login">
+    </form>
+    
+</body>
+</html>
