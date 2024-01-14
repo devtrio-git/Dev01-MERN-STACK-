@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: greenyellow;
+        }
+
+        .menu_button {
+            margin-left: 300px;
+        }
+
+        .menu_button h1 {
+            cursor: pointer;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: red;
+            position: fixed;
+            top: 0px;
+            left: -200px;
+            transition: 0.3s;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 50px;
+
+        }
+        .sidebar ul li {
+            margin: 20px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        .menu_button:hover+.sidebar{
+            left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="menu_button">
+            <h1>MENU</h1>
+        </div>
+        
+        <aside class="sidebar">
+            <h1>Sidebar</h1>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Test</li>
+            </ul>
+        </aside>
+    </div>
+
+
+
+
+</body>
+
+</html>

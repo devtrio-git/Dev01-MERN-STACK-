@@ -1,0 +1,42 @@
+/* 3 ways linking
+    background-color
+    selectors(universal, bytagname, class (dot: .), id (hash:#))
+*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+h1 {
+    background-color: bisque;
+}
+
+p {
+    background-color: aliceblue;
+}
+
+#heading1 {
+    color: darkblue;
+    text-align: center;
+    text-decoration-line: underline overline;
+}
+
+#heading2 {
+    color: darkred;
+    text-decoration-line: line-through;
+    text-decoration-color: chartreuse;
+}
+
+#heading3 {
+    color: darkblue;
+    text-align: end;
+}
+
+.para{
+    color: cadetblue;
+    text-transform: capitalize;
+}
