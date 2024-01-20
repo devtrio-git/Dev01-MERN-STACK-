@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* object-fit: fill (default), cover, contain */
+        .container img {
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+
+            object-fit: cover;
+
+            /* object-position: x  y ; */
+            /* object-position: -200px 0px; */
+
+        }
+
+        .container2 img {
+            width: 150px;
+            height: 500px;
+            object-fit: cover;
+            cursor: pointer;
+            /* transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out; */
+            /* transition-delay: 2s; */
+
+            transition: all 1s linear 0s;
+
+        }
+
+        .container2 img:hover {
+            width: 600px;
+
+        }
+
+        .container3 {
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .box:hover {
+            background-color: yellow;
+            /* transform: translate(100px, 100px); */
+            /* transform: scale(2); */
+            transform: rotate(360deg);
+            /* transform: skew(10deg); */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Object Fit & Object Position</h1>
+    <div class="container">
+        <img src="./assets/img4.jpg" alt="">
+    </div>
+
+    <h1>Transition</h1>
+    <div class="container2">
+        <img src="./assets/img1.jpg" alt="">
+        <img src="./assets/img2.jpg" alt="">
+        <img src="./assets/img3.jpg" alt="">
+        <img src="./assets/img4.jpg" alt="">
+    </div>
+
+    <!-- transform  -->
+
+    <!-- 
+translateX(10px), translateY(10px), translate(X,Y), for movement
+ scaleX, scaleY, scale, for size
+  rotateX(180deg), rotateY, rotate, 
+   skewX(10deg), skewY, skew, -->
+
+    <div class="container3">
+        <div class="box">
+            ASHAR AHMED
+        </div>
+        <div class="box">
+            ASHAR AHMED
+        </div>
+        <div class="box">
+            ASHAR AHMED
+        </div>
+    </div>
+
+    <!-- animation -->
+    <div class="container_animation">
+        <img class="img1" src="./assets/steering.png" alt="">
+        <img class="img2" src="./assets/steering.png" alt="">
+    </div>
+
+    <div class="box">
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
