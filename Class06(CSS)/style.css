@@ -1,0 +1,118 @@
+.container_animation{
+    background-color: bisque;
+    text-align: center;
+    margin: 100px 10px;
+    padding: 100px 0px;
+}
+.container_animation .img1{
+    animation-name: xyz;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} 
+.container_animation .img2{
+    animation-name: topBottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    /*alternate ---> 0 to 100 then 100 to 0 */
+    /* normal --> 0 to 100 */
+    animation-direction: alternate; 
+} 
+.box{
+    animation-name: tadinDinta;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes xyz {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes topBottom {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        
+        transform: translateY(100px);
+    }
+}
+
+@keyframes tadinDinta {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: pink;
+    }
+    75%{
+        background-color: brown;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+
+.example_container{
+    background-color: bisque;
+    padding: 200px 100px;
+
+}
+.example_container img{
+    width: 250px;
+    /* box-shadow: 2px 2px 45px 5px rgba(0,0,0,0.75); */
+    filter: drop-shadow(11px -9px 24px #c94545);
+
+}
+.example_container img:hover{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    animation: myAnimation 5s ease-in-out 0s infinite;
+}
+
+
+
+@keyframes myAnimation {
+    0%{
+        transform: scale(1) rotate(0);
+    }
+    50%{
+        transform: scale(2) rotate(0);
+    }
+    75%{
+        transform: scale(2) rotate(360deg);
+
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.display_container{
+    height: 200px;
+    border: 4px solid pink;
+}
+.display_container h1{
+    /* block --> accept margin all sides */
+    border: 1px solid black;
+    /* margin: 40px; */
+}
+.display_container span{
+    /* inline --> vertical margin not allowed */
+    border: 1px solid black;
+   display: inline-block;
+    /* margin: 100px; */
+    margin-top: 100px;
+}
