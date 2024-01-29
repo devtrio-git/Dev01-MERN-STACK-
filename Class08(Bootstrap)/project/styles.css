@@ -1,0 +1,127 @@
+:root{
+    --primary-color: #5974E6;
+    --light: #fff;
+    --dark: #000;
+    --text-color: gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--light);
+}
+.circle{
+    position: absolute;
+    top: 120px;
+    left: -100px;
+    height: 350px;
+    width: 350px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulseAnimation 5s ease-in-out infinite;
+}
+@keyframes pulseAnimation {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+}
+/* navbar */
+.logo{
+    width: 70px;
+    height: 70px;
+}
+.navbar{
+    min-height: 100px;
+    background: var(--light) !important;
+}
+.nav-link{
+    font-weight: 700 !important;
+    position: relative;
+    padding: 5px 0px !important;
+    font-size: 16px !important;
+}
+.nav-link::before{
+   position: absolute;
+   content: "";
+   bottom: 0px;
+   left: 0;
+   height: 3px;
+   width: 0%;
+   background: var(--primary-color);
+   transition: all 0.3s ease;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+
+.login_button{
+    border-radius: 10px !important;
+    padding: 8px 8px !important;
+    background-color: var(--light) !important;
+    color: #4c65bd !important;
+    border: 2px solid #4c65bd !important;
+    font-weight: 700 !important;
+}
+.login_button:hover{
+    background-color: var(--primary-color) !important;
+    color: var(--light) !important;
+}
+
+/* hero section */
+.hero_section_content, .hero_section_img{
+    min-height: calc(100vh - 116px);
+}
+
+.hero_section_content h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.hero_section_content p{
+   font-size: 14px;
+   line-height: 17px;
+   color: var(--text-color);
+}
+.hero_section_img img{
+    width: 70%;
+}
+.store_buttons img{
+    width: 150px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 998px) {
+    .hero_section_img{
+        min-height: 45vh;
+    }
+    .hero_section_content{
+        margin-top: 20px;
+        min-height: 100%;
+    }
+    .hero_section_img img{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero_section_img img{
+        width: 80%;
+    }
+    .hero_section_content h1{
+        font-size: 25px;
+    }
+    .hero_section_content p{
+       font-size: 12px;
+       line-height: 15px;
+    }
+    .store_buttons img{
+        width: 100px;
+    }
+}
