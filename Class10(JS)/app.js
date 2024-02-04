@@ -1,3 +1,13 @@
+// TABLE OF CONTENT
+// ; using for multiple statment in single line
+// legal illegal variable
+// caseSensative
+// Arthematic Operators(+,-,*,/,%,**)
+// Increment/Decrement
+// Precedence lefttoright
+// comparison operator
+// logical operator(&& || !)
+
 // new line break statements
 // var a = 5 ;
 // a *  5;
@@ -291,8 +301,8 @@
 
 // NOT OPERATOR !
 
-console.log(!true);
-console.log(!false);
+// console.log(!true);
+// console.log(!false);
 
 
 
