@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const shoopingList = []; 
+
+        // Func to add item in shooping list
+
+        function addItem(item){
+            shoopingList.push(item)
+
+            console.log(`${item} has been added in shopping list`)
+        }
+
+        // function to display shopping list
+
+        function displayShopList(){
+            console.log("Shopping List:")
+            for(let i = 0; i < shoopingList.length; i++){
+                console.log(`${i + 1}. List Item ${shoopingList[i]}`);
+            }
+
+
+        }
+
+
+        // Main Program
+       console.log("Welcome to the Shopping list Application")
+
+        // add item shopping list
+        addItem("Apples");
+        addItem("Juice");
+        addItem("Cake");
+        addItem("Coffe");
+
+
+
+        //Display ShoppingList   
+        displayShopList();
+
+    </script>
+</body>
+</html>
