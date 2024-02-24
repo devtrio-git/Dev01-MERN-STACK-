@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="my_name">Name</label>
+    <input type="text" name="name" id="my_name">
+    <br>
+    <label for="my_email">Email</label>
+    <input type="text" name="email" id="my_email">
+    <br>
+   <button onclick="submitData()">Submit</button> 
+    <br>
+    <br>
+    <!-- <button onclick="removeName()">remove name</button>
+    <button onclick="removeEmail()">remove email</button>
+    <br>
+    <button onclick="clearAll()">clear all</button>  -->
+
+</body>
+
+<script>
+
+
+    // cookies
+
+
+    function setCookies(key, value, expDays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
+        let expire = 'expires=' + d.toUTCString();
+        document.cookie = key + "=" + value + ";" + expire;
+    }
+
+    function getCookies(key) {
+        let cookiesArr = document.cookie.split("; ");
+        let value = "";
+        cookiesArr.forEach(function (item) {
+           if (item.startsWith(key)) {
+              value = item;
+           }
+        });
+
+        return value.slice((key.length+1))
+
+    }
+
+
+    let name = document.getElementById("my_name")
+    let email = document.getElementById("my_email")
+
+    name.value = getCookies('name');
+    email.value = getCookies('email');
+
+    function submitData() {
+        setCookies('name', name.value, 3);
+        setCookies('email', email.value, 3);
+        window.location.href = 'welcome.html';
+    }
+   
+
+
+
+
+// session
+    // let name = document.getElementById("my_name")
+    // let email = document.getElementById("my_email")
+
+    // Session Storage
+    // let name = document.getElementById("my_name")
+    // let email = document.getElementById("my_email")
+
+    // name.value = sessionStorage.getItem('name');
+    // email.value = sessionStorage.getItem('email');
+
+    // function submitData() {
+    //     sessionStorage.setItem('name', name.value);
+    //     sessionStorage.setItem('email', email.value);
+    //     window.open("welcome.html");
+    //     // window.location.href = 'welcome.html';
+    // }
+    // function removeName() {
+    //     sessionStorage.removeItem("name");
+    // }
+    // function removeEmail() {
+    //     sessionStorage.removeItem("email");
+    // }
+    // function clearAll() {
+    //     sessionStorage.clear();
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //  Local Storage
+    // let name = document.getElementById("my_name")
+    // let email = document.getElementById("my_email")
+
+    // name.value = localStorage.getItem('name');
+    // email.value = localStorage.getItem('email');
+
+    // function submitData() {
+    //     localStorage.setItem('name', name.value);
+    //     localStorage.setItem('email', email.value);
+    //     // window.open("welcome.html");
+    //     window.location.href = 'welcome.html';
+    // }
+    // function removeName() {
+    //     localStorage.removeItem("name");
+    // }
+    // function removeEmail() {
+    //     localStorage.removeItem("email");
+    // }
+    // function clearAll() {
+    //     localStorage.clear();
+    // }
+
+
+
+</script>
+
+</html>

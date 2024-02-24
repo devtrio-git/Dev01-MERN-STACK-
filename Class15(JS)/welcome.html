@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title"></h1>
+</body>
+
+
+<script>
+
+
+
+    function getCookies(key) {
+        let cookiesArr = document.cookie.split("; ");
+        let value = "";
+        cookiesArr.forEach(function (item) {
+            if (item.startsWith(key)) {
+                value = item;
+            }
+        });
+
+        return value.slice((key.length + 1))
+
+    }
+
+    let name = getCookies('name')
+    // let name = localStorage.getItem('name')
+    // let name = sessionStorage.getItem('name')
+    document.getElementById('title').innerText = `Welcome ${name}`
+</script>
+
+</html>
