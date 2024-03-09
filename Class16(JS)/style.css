@@ -1,0 +1,27 @@
+.container-fluid{
+    background-color: black;
+    min-height: 100vh;
+}
+#input{
+    width: 520px;
+
+}
+#ul{
+    list-style-type: none;
+    color: white;
+    width: 520px;
+    margin: auto;
+    
+}
+#ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+i{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
