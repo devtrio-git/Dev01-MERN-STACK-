@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promises in JS</h1>
+
+    <script>
+        // example 1
+        // const promiseOne = new Promise(function(resolve, reject){
+        //     setTimeout(function(){
+        //         console.log("Async data from DB");
+        //         resolve();
+        //     }, 3000)
+        // })
+
+        // promiseOne.then(function(){
+        //     console.log("Promise Consumed");
+        // })
+
+        // example 2
+        // new Promise(function(res, rej){
+        //     setTimeout(function(){
+        //         console.log("Async data from DB");
+        //         res()
+        //     }, 3000)
+        // }).then(function(){
+        //     console.log("Promise Completed");
+        // })
+
+        // example 3
+        // const promiseThree = new Promise(function(resolve, reject){
+        //     setTimeout(function(){
+        //         resolve({username: "DevTrio", company: "Software Tech", year: "2023"})
+        //     }, 5000)
+        // })
+
+        // promiseThree.then(function(data){
+        //     console.log(data);
+        // })
+
+        let randomNum = Math.round(Math.random() * 10);
+        console.log(randomNum);
+
+        new Promise(function(res,rej){
+            if(randomNum > 5){
+                return res("Num is greater than 5")
+            }else{
+                return rej("Num is less than 5")
+            }
+        }).then(function(data){
+            console.log(data);
+        }).catch(function(data){
+            console.log(data);
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="session">Session Active</div>
+
+
+
+    <script>
+        let sessionTimeout;
+
+        function startSessionTime(){
+            // Event mouse/keyboard clear exiting clear
+
+            clearTimeout(sessionTimeout);
+
+            // set new time count start
+            sessionTimeout = setTimeout(logoutUser,  3 * 60 * 1000);
+
+            // 2000=2sec
+            // 3 * 60 * 1000 = 3Mins
+
+        }
+
+
+        
+        function logoutUser(){
+            document.getElementById('session').textContent = 'Session expired! You have been logout...';
+
+        }
+
+        document.addEventListener('mousemove', startSessionTime);
+        document.addEventListener('keydown', startSessionTime);
+
+        // start session initially
+        startSessionTime();
+    </script>
+</body>
+</html>
