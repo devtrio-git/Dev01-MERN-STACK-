@@ -41,8 +41,8 @@ console.log(filterWithSalary)
 function getTotalSalaryOFDepartment (depart){
 const findTotalSalary = employees
 .filter(item=> item.department == depart)
-.map(item=> item.salary)
-.reduce((acc,curr)=> acc + curr ,0)
+// .map(item=> item.salary)
+.reduce((acc,curr)=> acc + curr.salary ,0)
 
 return findTotalSalary
 }
