@@ -1,4 +1,5 @@
 
+
 function MyMap(arr, callBack) {
     let result = [];
     for (const ele of arr) {
