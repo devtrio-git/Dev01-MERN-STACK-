@@ -1,0 +1,17 @@
+.auth_wrapper {
+    min-height     : 100vh;
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.form_container {
+    padding      : 15px;
+    box-shadow   : 5px 4px 5px 5px grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+}

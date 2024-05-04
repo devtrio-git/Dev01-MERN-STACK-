@@ -1,0 +1,26 @@
+.input_container {
+    display      : flex;
+    align-items  : center;
+    border-bottom: 1px solid var(--black);
+    width        : 100%;
+}
+
+.input_container>span {
+    width     : 40px;
+    font-size : 25px;
+    text-align: center;
+}
+
+.input_container .input_field {
+    flex: 1;
+}
+
+.input_container .input_field input {
+    border : none;
+    outline: none;
+    width  : 97%;
+}
+
+.input_err {
+    color: var(--error-color);
+}

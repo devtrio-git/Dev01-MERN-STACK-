@@ -1,0 +1,16 @@
+:root {
+    --error-color: rgb(245, 58, 58);
+    --black     : #000;
+    --white     : #fff;
+    --text-color: rgb(88, 87, 87);
+}
+
+body {
+    font-family     : sans-serif !important;
+    background-color: var(--white) !important;
+    color           : var(--text-color) !important;
+}
+
+a {
+    text-decoration: none;
+}
