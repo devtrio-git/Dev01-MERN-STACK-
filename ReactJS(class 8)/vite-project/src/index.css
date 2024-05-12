@@ -1,0 +1,48 @@
+:root {
+  --bg-page-color     : #fefefe;
+  --default-text-color: #202020;
+}
+
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+[data-theme='dark'] {
+  --bg-page-color     : #202020;
+  --default-text-color: #fefefe;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+small,
+a,
+span {
+  background-color: var(--bg-page-color) !important;
+  color           : var(--default-text-color) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.layout_page {
+  background-color: var(--bg-page-color);
+  color           : var(--default-text-color);
+  min-height      : 90vh;
+  width           : 100%;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
