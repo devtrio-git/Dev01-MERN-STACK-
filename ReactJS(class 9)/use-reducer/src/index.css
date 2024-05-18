@@ -1,0 +1,30 @@
+:root {
+    --error-color: rgb(245, 58, 58);
+    --black      : #000;
+    --white      : #fff;
+
+    /* light theme text and background */
+    --text-color: rgb(88, 87, 87);
+    --bg-color  : #ffffff;
+}
+
+
+[data-theme="dark"] {
+    --error-color: rgb(236, 94, 94);
+    --black      : #000;
+    --white      : #fff;
+
+    /* dark theme text and background */
+    --text-color: rgb(255, 255, 255);
+    --bg-color  : #000000;
+}
+
+body {
+    font-family     : sans-serif !important;
+    background-color: var(--bg-color) !important;
+    color           : var(--text-color) !important;
+}
+
+a {
+    text-decoration: none;
+}
