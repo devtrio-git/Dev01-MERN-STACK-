@@ -1,0 +1,8 @@
+.cartItem .cartImage{
+    width: 80px;
+    height: 80px;
+}
+.cartItem .cartImage img{
+    width: 100%;
+    height: 100%;
+}
