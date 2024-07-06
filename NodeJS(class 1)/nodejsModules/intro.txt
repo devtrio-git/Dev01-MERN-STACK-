@@ -1,0 +1,34 @@
+Backend Development...
+Back end Development refers to the server-side development
+Back end developer skills include Development Languages Database
+Backend engineer should know at least one server-side or Backend programming language like Java, Python, Ruby, c#, JavaScript etc.
+
+////////////////////////////////////////////////////////////////////////////////
+What is SERVER?
+A server is a computer or system that provides resources, data, services,
+server are able to accept request and send response...
+
+To develop a server need a server side programming languages
+These languages help to develop a server that contain the business logic, process the data.
+and help to save data on server or database.
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+Introduction to Backend Development with Node.js
+
+Node.js is a popular runtime environment that allows developers to use JavaScript for server-side programming. It is built on Chrome's V8 JavaScript engine, making it fast and efficient.
+
+Node.js is known for its non-blocking, event-driven architecture, which makes it suitable for building scalable and high-performance applications. It supports a wide range of libraries and frameworks, such as Express.js, which simplify the development process.
+
+
+Node.js is used for developing various types of applications, including web servers, APIs, and real-time applications. Its package manager, npm (Node Package Manager), provides a vast ecosystem of modules and packages that can be easily integrated into your projects.
+
+By using Node.js, backend developers can create robust and scalable servers, manage databases, and implement business logic, all using a single programming language: JavaScript.
+
+
+Non-blocking: When Node.js needs to do something slow, like reading a file or talking to a database, it doesn't wait for the slow task to finish. Instead, it starts the task and then moves on to do other things
+///////////////////////////////////////////////////////////////////////////////////
+
+We are using Express.js to develop the server and MongoDB for the database.
+But First We learn fundamentals of Node.js and create our server on Node.js without any frameworks
