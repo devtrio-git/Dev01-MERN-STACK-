@@ -1,0 +1,9 @@
+
+__dirname and __filename
+// CommonJS: Uses require, module.exports, and has __filename and __dirname built-in.
+// ES Modules: Uses import and export, and does not have __filename and __dirname.
+
+
+
+// all content type resource...
+// https://stackoverflow.com/questions/23714383/what-are-all-the-possible-values-for-http-content-type-header
