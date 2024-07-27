@@ -1,0 +1,21 @@
+MIDDLEWARE: Middleware sits between client-side and server-side components and middleware  functions are functions that have access to the request object(req), response object (res), and next function in the application request response cycle.
+next(): ye current request ko next route ya next middleware k pass forward krdeta hai
+The next function is a function in the Express router which, when invoked, executes the middleware succeeding the current middleware
+Middleware can perform:
+1. Execute any code
+2. Make changes to request and response object.
+3. End the request-response cycle.
+4. Call the next middleware in the stack.
+5. Authentication
+6. logging
+7. Error Handling
+8. Data parsing
+
+TWO types of middleware
+1. Application level middleware  app.use(myLogger)
+2. Router level middleware  router.use(myLogger)
+
+Built-In Middleware
+express.static
+express.json
+express.urlencoded
