@@ -1,0 +1,43 @@
+Mongoose shell queries:
+ show dbs  (show existing databases)
+ use database_name (switch to the bd)
+ show collections 
+ // creating collections
+ db.createCollection("collection_name")
+ db.collection_name.drop() --> for delete a collection_name
+
+CRUD in collections
+1.create
+db.collection_name.insertOne({})
+db.collection_name.insertMany([{},{}])
+
+2.read
+db.collection_name.find() --> fetch all the documents
+db.collection_name.find({"name":"Ashar"}) --> fetch all the documents in which name field value is "Ashar"
+
+comparision operators
+$eq, $gt, $gte , $lt, $lte, $ne 
+
+
+
+
+
+What is Mongoose?
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a straightforward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, and business logic hooks.
+
+What is ORM (Object-Relational Mapping)?
+ORM stands for Object-Relational Mapping. It is a programming technique used to convert data between incompatible type systems using object-oriented programming languages. ORM libraries map database tables to classes in the code and rows to objects. This way, developers can interact with the database using their preferred programming language's syntax rather than writing raw SQL queries.
+
+In the context of MongoDB, which is a NoSQL database, the term ODM (Object Data Modeling) is more appropriate, but the concept is similar to ORM in relational databases.
+
+
+Benefits of Mongoose
+
+1. Schema Definitions: Mongoose allows you to define schemas for your collections. This adds structure and validation to your data.
+2. Data Validation: Mongoose schemas support various types of validation, ensuring data integrity and reducing errors.
+3. Built-in Querying: Mongoose provides a fluent API for querying the database, which is more convenient and readable than raw MongoDB queries.
+4. Middleware (Hooks): Mongoose allows you to define middleware (also known as hooks) that can run before or after certain operations (e.g., save, remove).
+5. Relationships and Population: Mongoose allows you to define relationships between different collections and populate related documents.
+
+----------------------
+
